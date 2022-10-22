@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contact-form{
+            text-align: center;
+            padding: 10px 0;
+            font-size: 22px;
+        }
+        .contact-form input{
+            padding: 10px 80px;
+            border-radius: 10px;
+        }
+        .contact-form button{
+            padding: 20px 40px;
+            margin: 10px 0;
+            border-radius: 20px;
+            font-size: 20px;
+            background-color: cornflowerblue;
+            border: none;
+            color: #222;
+        }.contact-form button:hover{
+            border: 1px solid #222;
+        }
+        .content h3{
+            font-size: 22px;
+            padding: 50px 50px;
+        }
+        .tab-pane {
+            display: none;
+        }
+        .show {
+            display: block;
+        }
+        .content button{
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="js-18">
+        <form class="contact-form"> 
+            <div class="input" data-validate="Name is required">
+                <h2>Nhập số N vào mảng...</h2>
+                <input id="txtMang" type="number" name="name" placeholder="Nhập số n">
+                <span class="focus-input100"></span>
+            </div>
+            <button onclick="ex1()" type="button" class="btn-form">
+                Thêm số
+            </button>
+        </form>   
+        
+        <div class="content">
+            <button data-target="bai1" id="btnBai1" onclick="changeTab(event)" class="button-18" role="button">Bài 1: Tính tổng số dương</button><br>
+            <button data-target="bai2" id="btnBai2" onclick="changeTab(event)"  role="button">Bài 2: Đếm số dương</button><br>
+            <button data-target="bai3" id="btnBai3" onclick="changeTab(event)"  role="button">Bài 3: Tìm số nhỏ nhất</button><br>
+            <button data-target="bai4" id="btnBai4" onclick="changeTab(event)"  role="button">Bài 4: Tìm số dương nhỏ nhất</button><br>
+            <button data-target="bai5" id="btnBai5" onclick="changeTab(event)"  role="button">Bài 5: Tìm số chẵn cuối cùng</button><br>
+            <button data-target="bai6" id="btnBai6" onclick="changeTab(event)"  role="button">Bài 6: Đổi chỗ</button><br>
+            <button data-target="bai7" id="btnBai7" onclick="changeTab(event)"  role="button">Bài 7: Xắp xếp tăng dần</button><br>
+            <button data-target="bai8" id="btnBai8" onclick="changeTab(event)"  role="button">Bài 8: Tìm số nguyên tố đầu tiên</button><br>
+            <button data-target="bai9" id="btnBai9" onclick="changeTab(event)"  role="button">Bài 9: Đếm số nguyên</button><br>
+            <button data-target="bai10" id="btnBai10" onclick="changeTab(event)"role="button">Bài 10: So sánh lượng số âm và số dương</button>
+        </div>
+
+        <div id="bai1" class="tab-pane ">
+            <form> 
+                <div >
+                    <button onclick="ex1()" type="button">
+                      Tính Tổng
+                    </button>
+                </div>
+              <div id="divThanhTien" class="dongia">
+                <h2>Tổng số dương: 
+                  <span id="xuatTien" class="xuatTien"> </span>
+                </h2>
+              </div>
+          </div>
+
+
+
+
+
+    </div>  
+
+    <script src="./index.js"></script>
+</body>                 
+</html>
